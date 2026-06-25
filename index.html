@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="styles/styles.css">
     <style>
         #intro {
-            border-bottom: 2px solid #2ff1e1;
+            border-bottom: 2px solid #ffbc42;
             grid-column: 2;
         }
 
         #top-post {
             grid-column: 2;
-            border-bottom: 2px solid #2ff1e1;
+            border-bottom: 2px solid #ffbc42;
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: .5fr 1fr;
+            overflow: hidden;
         }
 
         #top-cat {
@@ -51,8 +52,8 @@
             display: grid;
             grid-template-rows: auto;
             gap: 5px;
-            margin-right: 80%;
             padding: 15px;
+            margin-left: 20px;
         }
     </style>
 
@@ -70,10 +71,10 @@
             <input id="search-bar" type="text" placeholder="Search..">            
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a id="page1link" href="pages/page2.html">Page 1</a></li>
+                    <li><span>Home</span></li>
+                    <li><a id="page1link" href="pages/page1.html">Page 1</a></li>
                     <li><a id="page2link" href="pages/page2.html">Page 2</a></li>
-                    <li><a id="siteplanlink" href="pages/site-plan.html" target="_blank">Site Plan</a></li>
+                    <li><a id="siteplanlink" href="pages/site-plan.html">Site Plan</a></li>
 
                 </ul>
             </nav>
@@ -94,10 +95,10 @@
             </p>
         </div>
         <div id="top-cat">
-            <h2>Top Catagories</h2>
+            <h2>Top Categories</h2>
             <ul>
-                <li>Catagory 1</li>
-                <li>Catagory 2</li>
+                <li>Category 1</li>
+                <li>Category 2</li>
             </ul>
         </div>
     </main>

@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InFiction site-plan</title>
+    <title>InFiction Category Page</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <style>
+        #category-links {
+            border-bottom: 2px solid #ffbc42;
+        }
 
+        #categories {
+            border: 2px solid #9a031e;
+            max-width: fit-content;
+            padding: 15px;
+            margin-left: 20px;
+        }
+
+        #category-descriptions p {
+            padding-left: 25px;
+        }
+
+        #category-descriptions {
+            border: #9a031e solid 2px;
+            padding: 30px;
+            max-width: 800px;
+            max-height: fit-content;
+            margin-top: auto;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -19,12 +41,32 @@
         <div id="navbar">
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a id="page1link" href="pages/page2.html" target="_blank">Page 1</a></li>
-                    <li><a id="page2link" href="pages/page2.html" target="_blank">Page 2</a></li>
-                    <li><a id="siteplanlink" href="pages/site-plan.html" target="_blank">Site Plan</a></li>
+                    <li><a id="home-page" href="../index.html">Home</a></li>
+                    <li><a>Page 1</a></li>
+                    <li><a id="page2link" href="page2.html">Page 2</a></li>
+                    <li><a id="siteplanlink" href="site-plan.html">Site Plan</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div id="category-links">
+            <ul id="categories">
+                <li><a>Category</a></li>
+                <li><a>Category</a></li>
+                <li><a>Category</a></li>
+                <li><a>Category</a></li>
+            </ul>
+        </div>
+
+        <div id="category-descriptions">
+            <h4>Category Name</h4>
+            <p>A little bit about this category.</p>
+            <h4>Category Name</h4>
+            <p>A little bit about this category.</p>
+            <h4>Category Name</h4>
+            <p>A little bit about this category.</p>
+            <h4>Category Name</h4>
+            <p>A little bit about this category.</p>
         </div>
     </main>
 
@@ -32,13 +74,13 @@
         <p>2026 - Truman Rowe</p>
         <div class="socials">
             <a href="https://facebook.com" target="_blank">
-                <img class="social-img" src="images/facebook-logo.png" alt="fb icon">
+                <img class="social-img" src="../images/facebook-logo.png" alt="fb icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img class="social-img" src="images/X-logo.png.webp" alt="twitter icon">
+                <img class="social-img" src="../images/X-logo.png.webp" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img class="social-img" src="images/Instagram-Logo.png" alt="instagram icon">
+                <img class="social-img" src="../images/Instagram-Logo.png" alt="instagram icon">
             </a>
         </div>
     </footer>

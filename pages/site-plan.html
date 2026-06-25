@@ -6,7 +6,95 @@
     <title>InFiction site-plan</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <style>
-        
+        #wireframe-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            justify-content: center;
+            max-width: 70%;
+            max-height: 90%;
+            border: #9a031e solid 2px;
+            margin: auto;
+            padding: 7px;
+            overflow-x: auto;
+        }
+
+        .wireframes {
+            width: 150px;
+            border: #9a031e solid 2px;
+            padding: 3px;
+        }
+
+        #wireframe-title {
+            grid-column: 1 / 3;
+            border-bottom: #9a031e solid 2px;
+        }
+
+        #homepage-title {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #homepage-wireframe {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        #pg2-title {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #pg2-wireframe {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        #pg3-title {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        #pg3-wireframe {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        #caf-card{
+            border: #9a031e solid 2px;
+            max-width: 70%;
+            max-height: 90%;
+            padding: 7px;
+            margin: auto;   
+            font-size: clamp(1rem, 2vw, 2rem);
+            overflow-x: auto;                
+        }
+
+        #caf-title {
+            border-bottom: #9a031e solid 2px;
+        }
+
+        table {
+            border: #9a031e solid 2px;
+            padding: 10px;
+            border-spacing: 15px;
+            margin: auto;
+
+        }
+
+        th, tr, td {
+            border-left: #9a031e solid 2px;
+            border-right: #9a031e solid 2px;
+            padding: 3px;
+        }
+
+        #siteplan-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -19,12 +107,54 @@
         <div id="navbar">
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a id="page1link" href="pages/page2.html">Page 1</a></li>
-                    <li><a id="page2link" href="pages/page2.html">Page 2</a></li>
-                    <li><a id="siteplanlink" href="pages/site-plan.html" target="_blank">Site Plan</a></li>
+                    <li><a id="home-page" href="../index.html">Home</a></li>
+                    <li><a id="page1link" href="page1.html">Page 1</a></li>
+                    <li><a id="page2link" href="page2.html">Page 2</a></li>
+                    <li><a>Site Plan</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div id="siteplan-content">
+            <div id="wireframe-card">
+                <h2 id="wireframe-title">Wireframes</h2>
+                <h4 id="homepage-title">Homepage Wireframe</h4>
+                <img id="homepage-wireframe" class="wireframes" src="../images/HomePageWF.png" alt="Home page Wireframe">
+                <h4 id="pg2-title">Page 2 Wireframe</h4>
+                <img id="pg2-wireframe" class="wireframes" src="../images/Page2WF.png" alt="Page 2 Wireframe">
+                <h4 id="pg3-title">Page 3 Wireframe</h4>
+                <img id="pg3-wireframe" class="wireframes" src="../images/Page3WF.png" alt="Page 3 Wireframe">
+            </div>
+
+            <div id="caf-card">
+                <h2 id="caf-title">Colors & Fonts</h2>
+                <h4>Colors:</h4>            
+                <table>
+                    <tr>
+                        <th>Color 1</th>
+                        <th>Color 2</th>
+                        <th>Color 3</th>
+                        <th>Color 4</th>
+                    </tr>
+                    <tr>
+                        <td>#1a1423</td>
+                        <td>#ffbc42</td>
+                        <td>#2ff1e1</td>
+                        <td>#9a031e</td>
+                    </tr>
+                </table>
+                <h4>Fonts:</h4>            
+                <table>
+                    <tr>
+                        <th>Font 1</th>
+                        <th>Font 2</th>
+                    </tr>
+                    <tr>
+                        <td>Major Mono Display</td>
+                        <td>Font: SUSE Mono</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </main>
 
@@ -32,13 +162,13 @@
         <p>2026 - Truman Rowe</p>
         <div class="socials">
             <a href="https://facebook.com" target="_blank">
-                <img class="social-img" src="images/facebook-logo.png" alt="fb icon">
+                <img class="social-img" src="../images/facebook-logo.png" alt="fb icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img class="social-img" src="images/X-logo.png.webp" alt="twitter icon">
+                <img class="social-img" src="../images/X-logo.png.webp" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img class="social-img" src="images/Instagram-Logo.png" alt="instagram icon">
+                <img class="social-img" src="../images/Instagram-Logo.png" alt="instagram icon">
             </a>
         </div>
     </footer>

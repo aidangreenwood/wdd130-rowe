@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InFiction site-plan</title>
+    <title>InFiction Book Page</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <style>
-        
+        #post-name-title {
+            border-bottom: 2px solid #ffbc42;
+        }
+
+        #name-of-the-post {
+            margin: auto;
+            justify-self: center;
+        }
+
+        #creds {
+            border-bottom: #ffbc42 2px solid;
+        }
+
+        #cred-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 20px;
+        }
+
+        #cred-list li {
+            list-style: none;
+        }
+
+        #cred-list li:not(:last-child)::after {
+            content: " | ";
+            margin: 0 5px;
+        }
+
+        #post-text p {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #9a031e;
+        }
     </style>
 </head>
 <body>
@@ -19,12 +52,33 @@
         <div id="navbar">
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a id="page1link" href="pages/page2.html">Page 1</a></li>
-                    <li><a id="page2link" href="pages/page2.html">Page 2</a></li>
-                    <li><a id="siteplanlink" href="pages/site-plan.html" target="_blank">Site Plan</a></li>
+                    <li><a id="home-page" href="../index.html">Home</a></li>
+                    <li><a id="page1link" href="page1.html">Page 1</a></li>
+                    <li><a>Page 2</a></li>
+                    <li><a id="siteplanlink" href="site-plan.html"">Site Plan</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div id="page-content">
+            <div id="post-name-title">
+                <h2 id="name-of-the-post">Name of Post/Story</h2>
+            </div>
+
+            <div id="creds">
+                <ul id="cred-list">
+                    <li>Author Name</li>
+                    <li>Date Published</li>
+                    <li>Genre</li>
+                    <li>Featured Categorys</li>
+                </ul>
+            </div>
+
+            <div id="post-text">
+                <p>
+                    This is where the main text of the post will go.
+                </p>
+            </div>
         </div>
     </main>
 
@@ -32,13 +86,13 @@
         <p>2026 - Truman Rowe</p>
         <div class="socials">
             <a href="https://facebook.com" target="_blank">
-                <img class="social-img" src="images/facebook-logo.png" alt="fb icon">
+                <img class="social-img" src="../images/facebook-logo.png" alt="fb icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img class="social-img" src="images/X-logo.png.webp" alt="twitter icon">
+                <img class="social-img" src="../images/X-logo.png.webp" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img class="social-img" src="images/Instagram-Logo.png" alt="instagram icon">
+                <img class="social-img" src="../images/Instagram-Logo.png" alt="instagram icon">
             </a>
         </div>
     </footer>
