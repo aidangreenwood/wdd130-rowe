@@ -11,15 +11,6 @@
             grid-column: 2;
         }
 
-        #top-post {
-            grid-column: 2;
-            border-bottom: 2px solid #ffbc42;
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: .5fr 1fr;
-            overflow: hidden;
-        }
-
         #top-cat {
             grid-column: 2;
         }
@@ -33,27 +24,51 @@
 
         #top-post p {
             grid-column: 2;
-            grid-row: 1 / 3;
+            grid-row: 2;
             border: #9a031e solid 2px;
             margin: auto;
             padding: 20px;
         }
 
+        #top-post {
+            grid-column: 2;
+            border-bottom: 2px solid #ffbc42;
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            overflow: hidden;
+        }
+
         #top-post h4 {
             grid-column: 1;
+            grid-row: 2;
             border: #9a031e solid 2px;
             margin: auto;
             padding: 30px;
+        }
+
+        #top-post h2 {
+            grid-column: 1 / 3;
+            grid-row: 1;
         }
 
         #top-cat ul {
             border: #9a031e solid 2px;
             width: fit-content;
             display: grid;
-            grid-template-rows: auto;
             gap: 5px;
             padding: 15px;
             margin-left: 20px;
+        }
+
+        #top-cat li {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        #intro, #top-post, #top-cat {
+            padding: 20px;
         }
     </style>
 
@@ -89,16 +104,19 @@
         </div>
         <div id="top-post">
             <h2>Top Posts</h2>
-            <h4 id="top-post-title">top-post-title</h4>
+            <h4 id="top-post-title">Marshall M1</h4>
             <p>
-                This is what the top post would say
+                Created as a cooperation between GDLS and the U.S. Federal
+                government, and later the USRF is a design of KF created to
+                adapt the general design of the Glasgow to the Strategic
+                and Operational needs of the war. A request was put forward...
             </p>
         </div>
         <div id="top-cat">
             <h2>Top Categories</h2>
             <ul>
-                <li>Category 1</li>
-                <li>Category 2</li>
+                <li>Hard Sci-Fi</li>
+                <li>Space Opera</li>
             </ul>
         </div>
     </main>

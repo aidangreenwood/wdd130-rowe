@@ -10,6 +10,16 @@
             border-bottom: 2px solid #ffbc42;
         }
 
+        #page-content {
+            max-width: 800px;
+            margin-left: 20px;
+        }
+
+        #post-text {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
         #name-of-the-post {
             margin: auto;
             justify-self: center;
@@ -40,6 +50,27 @@
             padding: 20px;
             border: 2px solid #9a031e;
         }
+
+        #post-text h4 {
+            margin-left: 20px;
+        }
+
+        #post-text li{
+            list-style:square;
+            margin-left: 20px;
+        }
+
+        #post-text > ul {
+            border: 2px solid #9a031e;
+            padding: 20px 20px 20px 45px;
+            margin: 20px;
+
+        }
+
+        #post-text ul ul {
+            margin-left: 30px;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -55,29 +86,50 @@
                     <li><a id="home-page" href="../index.html">Home</a></li>
                     <li><a id="page1link" href="page1.html">Page 1</a></li>
                     <li><a>Page 2</a></li>
-                    <li><a id="siteplanlink" href="site-plan.html"">Site Plan</a></li>
+                    <li><a id="siteplanlink" href="site-plan.html">Site Plan</a></li>
                 </ul>
             </nav>
         </div>
 
         <div id="page-content">
             <div id="post-name-title">
-                <h2 id="name-of-the-post">Name of Post/Story</h2>
+                <h2 id="name-of-the-post">M23A1E1-KFR</h2>
             </div>
 
             <div id="creds">
                 <ul id="cred-list">
-                    <li>Author Name</li>
-                    <li>Date Published</li>
-                    <li>Genre</li>
-                    <li>Featured Categorys</li>
+                    <li>Jihad</li>
+                    <li>2026</li>
+                    <li>KFR</li>
+                    <li>Anti-Armor Weapon</li>
                 </ul>
             </div>
 
             <div id="post-text">
                 <p>
-                    This is where the main text of the post will go.
+                    With the advancement of the KF program undergoing development
+                    by GDLS the reached out to the Picatinny Arsenal for a number
+                    of suitable weapons solutions capable of application to the prototypes.
+                    One of the solutions provided was adopted as the M23A1E1-KFR, a heavily 
+                    modified version of the XM913 adapted for use in conjunction with a KF.
+
                 </p>
+                <h4>Features:</h4>
+                <ul>
+                    <li>Selectable Ammunition Type</li>
+                    <li>Selectable RPM</li>
+                    <li>Easy disassembly and reassembly</li>
+                    <li>Computer Integration with the KF
+                        <ul>
+                            <li>
+                                Allowing for remote control of the weapon as well
+                                as integration with the KFs internal computer to provide 
+                                not only heads up aiming but also accurate firing solutions
+                                and range finding (assuming related systems of the KF are not damaged)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>

@@ -11,10 +11,16 @@
         }
 
         #categories {
-            border: 2px solid #9a031e;
-            max-width: fit-content;
-            padding: 15px;
             margin-left: 20px;
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            grid-auto-flow: column;
+            gap: 10px 40px;
+
+            border: 2px solid #9a031e;
+            padding: 15px;
+            max-width: 700px;
+            overflow-x: auto;
         }
 
         #category-descriptions p {
@@ -24,11 +30,18 @@
         #category-descriptions {
             border: #9a031e solid 2px;
             padding: 30px;
-            max-width: 800px;
-            max-height: fit-content;
             margin-top: auto;
             margin-left: 20px;
+            max-width: 700px;
+            max-height: 500px;
+            overflow-y: auto;
         }
+
+        #categories li {
+            list-style: square;
+            margin-left: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -51,22 +64,77 @@
 
         <div id="category-links">
             <ul id="categories">
-                <li><a>Category</a></li>
-                <li><a>Category</a></li>
-                <li><a>Category</a></li>
-                <li><a>Category</a></li>
+                <li><a href="#">Hard Sci-Fi</a></li>
+                <li><a href="#">Space Opera</a></li>
+                <li><a href="#">Cyberpunk & Near-Future</a></li>
+                <li><a href="#">Post-Apocalyptic & Dystopian</a></li>
+                <li><a href="#">Military Sci-Fi</a></li>
+                <li><a href="#">Time Travel & Alternate History</a></li>
+                <li><a href="#">First Contact & Alien Worlds</a></li>
+                <li><a href="#">Epic & High Fantasy</a></li>
+                <li><a href="#">Urban & Contemporary Fantasy</a></li>
+                <li><a href="#">Dark Fantasy & Grimdark</a></li>
+                <li><a href="#">Sword & Sorcery</a></li>
+                <li><a href="#">Low Fantasy</a></li>
+                <li><a href="#">Mythology & Fairy Tale Retellings</a></li>
+                <li><a href="#">Science Fantasy</a></li>
+                <li><a href="#">Steampunk & Gaslamp</a></li>
+                <li><a href="#">Weird Fiction & Cosmic Horror</a></li>
+                <li><a href="#">LitRPG & Progression Fantasy</a></li>
             </ul>
         </div>
 
         <div id="category-descriptions">
-            <h4>Category Name</h4>
-            <p>A little bit about this category.</p>
-            <h4>Category Name</h4>
-            <p>A little bit about this category.</p>
-            <h4>Category Name</h4>
-            <p>A little bit about this category.</p>
-            <h4>Category Name</h4>
-            <p>A little bit about this category.</p>
+            <h4>Hard Sci-Fi</h4>
+            <p>Stories grounded in real science, technology, and scientific accuracy.</p>
+
+            <h4>Space Opera</h4>
+            <p>Epic adventures across space featuring grand conflicts and memorable heroes.</p>
+
+            <h4>Cyberpunk & Near-Future</h4>
+            <p>High-tech worlds where advanced technology collides with society and corruption.</p>
+
+            <h4>Post-Apocalyptic & Dystopian</h4>
+            <p>Tales of survival in broken civilizations or oppressive future societies.</p>
+
+            <h4>Military Sci-Fi</h4>
+            <p>Science fiction focused on warfare, strategy, and life in the armed forces.</p>
+
+            <h4>Time Travel & Alternate History</h4>
+            <p>Stories that explore changing the past or imagining different versions of history.</p>
+
+            <h4>First Contact & Alien Worlds</h4>
+            <p>Explorations of new planets and humanity's first encounters with alien life.</p>
+
+            <h4>Epic & High Fantasy</h4>
+            <p>Large-scale fantasy adventures set in richly imagined magical worlds.</p>
+
+            <h4>Urban & Contemporary Fantasy</h4>
+            <p>Magic and mythical creatures hidden within the modern world.</p>
+
+            <h4>Dark Fantasy & Grimdark</h4>
+            <p>Fantasy with darker themes, morally gray characters, and harsh realities.</p>
+
+            <h4>Sword & Sorcery</h4>
+            <p>Fast-paced adventures featuring heroes, monsters, and powerful magic.</p>
+
+            <h4>Low Fantasy</h4>
+            <p>Fantasy where magical elements exist within a mostly ordinary world.</p>
+
+            <h4>Mythology & Fairy Tale Retellings</h4>
+            <p>Fresh takes on classic myths, legends, and fairy tales.</p>
+
+            <h4>Science Fantasy</h4>
+            <p>A blend of futuristic science fiction and magical fantasy elements.</p>
+
+            <h4>Steampunk & Gaslamp</h4>
+            <p>Victorian-inspired adventures powered by steam technology and imagination.</p>
+
+            <h4>Weird Fiction & Cosmic Horror</h4>
+            <p>Strange, unsettling stories that explore the unknown and unimaginable.</p>
+
+            <h4>LitRPG & Progression Fantasy</h4>
+            <p>Fantasy where characters grow stronger through game-like systems or steady progression.</p>
         </div>
     </main>
 
