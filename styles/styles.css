@@ -77,3 +77,7 @@ a {
     max-width: 70%;
     border-radius: 10px
 }
+
+main > div {
+    padding: 20px;
+}
