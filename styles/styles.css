@@ -52,6 +52,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-row: 1 / 4;
+    
 }
 
 footer {
@@ -81,3 +82,4 @@ a {
 main > div {
     padding: 20px;
 }
+
